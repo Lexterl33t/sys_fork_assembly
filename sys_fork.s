@@ -17,7 +17,6 @@ _print_pid:
 	syscall
 	mov rdi, print_result
 	mov rsi, rax
-	xor rax, rax
 	call printf
 	syscall
 	jmp _exit
